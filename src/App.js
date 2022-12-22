@@ -5,6 +5,7 @@ import { Menu } from "./pages/Menu";
 import { Contact } from "./pages/Contact";
 import { Profile } from "./pages/Profile";
 import { Navbar } from "./pages/Navbar";
+import { ErrorPage } from "./pages/ErrorPage";
 export default function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/profile/:username" element={<Profile />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Router>
     </div>
